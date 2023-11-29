@@ -13,14 +13,10 @@ sleep 3
 dnsproxy -i config.json
 cp config.sample.json config.json
 clear
-apt-get update\
-  && apt-get -y install vim dnsutils curl sudo\
-  && cd /opt\
-  && mkdir -p smart-dns-proxy\
-  && cd smart-dns-proxy\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && curl -fsSL https://github.com/Publish3r/smart-dns-proxy/raw/main/install.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
+git clone https://github.com/Square252/adBlockHosts.git
+cd adBlockHosts
+chmod +x adBlockHostsGenerate.sh
+./adBlockHostsGenerate.sh
 
   sleep 5
 
@@ -30,15 +26,6 @@ cd dante-1.4.2
 ./configure
 make -j`nproc`
 make install
-
-  echo "====================================="
-  echo "Bismillahirahmannirrahim"
-  echo "====================================="
-  sleep 5
-git clone https://github.com/Square252/adBlockHosts.git
-cd adBlockHosts
-chmod +x adBlockHostsGenerate.sh
-./adBlockHostsGenerate.sh
 
   echo "====================================="
   echo "Bismillahirahmannirrahim"
