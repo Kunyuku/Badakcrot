@@ -27,8 +27,6 @@ cd dante-1.4.2
 make -j`nproc`
 make install
 
-  sleep 5
-
   echo "====================================="
   echo "Bismillahirahmannirrahim"
   echo "====================================="
