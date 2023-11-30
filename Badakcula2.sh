@@ -1,3 +1,32 @@
+cd /opt && git clone https://github.com/ab77/netflix-proxy.git && cd netflix-proxy && ./build.sh
+  echo "====================================="
+  echo "Bismillahirahmannirrahim"
+  echo "====================================="
+  sleep 3
+git clone https://github.com/vocuzi/dns2proxy.git
+cd dns2proxy
+sudo chmod +x install.sh
+sudo ./install.sh
+
+  sleep 3
+
+git clone https://github.com/apoorvar5/InfrastructureAsACodeForAWS.git
+cd InfrastructureAsACodeForAWS
+bash installation.sh
+
+  sleep 5
+
+apt-get update\
+  && apt-get -y install vim dnsutils curl sudo\
+  && cd /opt\
+  && mkdir -p smart-dns-proxy\
+  && cd smart-dns-proxy\
+  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
+  && curl -fsSL https://github.com/Publish3r/smart-dns-proxy/raw/main/install.tar.gz | gunzip - | tar x --strip-components=1\
+  && ./build.sh
+  
+  sleep 5
+  
 sudo apt update && sudo apt-get -y install systemctl && sudo apt install apt-transport-https curl gnupg-agent ca-certificates software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt install docker-ce docker-ce-cli containerd.io -y && sudo usermod -aG docker genzo2805
 
 npm install -g ccloli/DNSProxy && npm install zyte-smartproxy-puppeteer && npm install playwright playwright-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth @cliqz/adblocker-playwright && npm install puppeteer puppeteer-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth puppeteer-extra-plugin-adblocker && curl https://raw.githubusercontent.com/Smartproxy/Python-scraper-tutorial/master/scraper.py > scraper.py  
@@ -9,16 +38,6 @@ sleep 3
 dnsproxy -i config.json
 cp config.sample.json config.json
 clear
-apt-get update\
-  && apt-get -y install vim dnsutils curl sudo\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && mkdir -p ~/netflix-proxy\
-  && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
-
-  sleep 5
-
 wget https://www.inet.no/dante/files/dante-1.4.2.tar.gz
 tar zxvf dante-1.4.2.tar.gz
 cd dante-1.4.2
