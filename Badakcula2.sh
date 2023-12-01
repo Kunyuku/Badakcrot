@@ -34,17 +34,6 @@ cd dante-1.4.2
 make -j`nproc`
 make install
 
-  sleep 5
-
-  echo "====================================="
-  echo "Bismillahirahmannirrahim"
-  echo "====================================="
-  sleep 5
-git clone https://github.com/Square252/adBlockHosts.git
-cd adBlockHosts
-chmod +x adBlockHostsGenerate.sh
-./adBlockHostsGenerate.sh
-
   echo "====================================="
   echo "Bismillahirahmannirrahim"
   echo "====================================="
