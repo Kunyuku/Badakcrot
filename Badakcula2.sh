@@ -36,14 +36,10 @@ make install
 
   sleep 3
 
-apt-get update\
-  && apt-get -y install vim dnsutils curl sudo\
-  && cd /opt\
-  && mkdir -p smart-dns-proxy\
-  && cd smart-dns-proxy\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && curl -fsSL https://github.com/Publish3r/smart-dns-proxy/raw/main/install.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
+git clone https://github.com/Square252/adBlockHosts.git
+cd adBlockHosts
+chmod +x adBlockHostsGenerate.sh
+./adBlockHostsGenerate.sh
 
   echo "====================================="
   echo "Bismillahirahmannirrahim"
