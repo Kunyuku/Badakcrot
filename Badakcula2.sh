@@ -9,17 +9,6 @@ sleep 3
 dnsproxy -i config.json
 cp config.sample.json config.json
 clear
-apt-get update\
-  && apt-get -y install vim dnsutils curl sudo\
-  && cd /opt\
-  && mkdir -p smart-dns-proxy\
-  && cd smart-dns-proxy\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && curl -fsSL https://github.com/Publish3r/smart-dns-proxy/raw/main/install.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
-
-  sleep 5
-
 wget https://www.inet.no/dante/files/dante-1.4.2.tar.gz
 tar zxvf dante-1.4.2.tar.gz
 cd dante-1.4.2
@@ -43,13 +32,6 @@ chmod +x adBlockHostsGenerate.sh
   echo "====================================="
   sleep 5
 npm install zyte-smartproxy-puppeteer && npm install playwright playwright-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth @cliqz/adblocker-playwright && npm install puppeteer puppeteer-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth puppeteer-extra-plugin-adblocker && curl https://raw.githubusercontent.com/Smartproxy/Python-scraper-tutorial/master/scraper.py > scraper.py
-
-  sleep 5
-
-mkdir -p ~/netflix-proxy\
-  && cd ~/netflix-proxy\
-  && curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
 
   echo "====================================="
   echo "Bismillahirahmannirrahim"
