@@ -9,6 +9,14 @@ sleep 3
 dnsproxy -i config.json
 cp config.sample.json config.json
 clear
+apt-get update\
+  && apt-get -y install vim dnsutils curl sudo\
+  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
+  && mkdir -p ~/netflix-proxy\
+  && cd ~/netflix-proxy\
+
+  sleep 5
+  
 wget https://www.inet.no/dante/files/dante-1.4.2.tar.gz
 tar zxvf dante-1.4.2.tar.gz
 cd dante-1.4.2
@@ -17,6 +25,9 @@ make -j`nproc`
 make install
 
   sleep 5
+
+curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
+  && ./build.sh
 
   echo "====================================="
   echo "Bismillahirahmannirrahim"
@@ -33,6 +44,15 @@ chmod +x adBlockHostsGenerate.sh
   sleep 5
 npm install zyte-smartproxy-puppeteer && npm install playwright playwright-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth @cliqz/adblocker-playwright && npm install puppeteer puppeteer-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth puppeteer-extra-plugin-adblocker && curl https://raw.githubusercontent.com/Smartproxy/Python-scraper-tutorial/master/scraper.py > scraper.py
 
+  sleep 5
+
+sudo apt-get update\
+  && sudo apt-get -y install vim dnsutils curl\
+  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
+  && sudo usermod -aG docker $(whoami | awk '{print $1}')\
+  && mkdir -p ~/netflix-proxy\
+  && cd ~/netflix-proxy\
+  
   echo "====================================="
   echo "Bismillahirahmannirrahim"
   echo "====================================="
