@@ -24,11 +24,6 @@ cd dante-1.4.2
 make -j`nproc`
 make install
 
-  sleep 5
-
-curl -fsSL https://github.com/ab77/netflix-proxy/archive/latest.tar.gz | gunzip - | tar x --strip-components=1\
-  && ./build.sh
-
   echo "====================================="
   echo "Bismillahirahmannirrahim"
   echo "====================================="
