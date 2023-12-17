@@ -28,15 +28,6 @@ make install
   echo "Bismillahirahmannirrahim"
   echo "====================================="
   sleep 5
-git clone https://github.com/Square252/adBlockHosts.git
-cd adBlockHosts
-chmod +x adBlockHostsGenerate.sh
-./adBlockHostsGenerate.sh
-
-  echo "====================================="
-  echo "Bismillahirahmannirrahim"
-  echo "====================================="
-  sleep 5
 npm install zyte-smartproxy-puppeteer && npm install playwright playwright-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth @cliqz/adblocker-playwright && npm install puppeteer puppeteer-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth puppeteer-extra-plugin-adblocker && curl https://raw.githubusercontent.com/Smartproxy/Python-scraper-tutorial/master/scraper.py > scraper.py
 
   sleep 5
