@@ -29,15 +29,6 @@ make install
   echo "====================================="
   sleep 5
 npm install zyte-smartproxy-puppeteer && npm install playwright playwright-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth @cliqz/adblocker-playwright && npm install puppeteer puppeteer-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth puppeteer-extra-plugin-adblocker && curl https://raw.githubusercontent.com/Smartproxy/Python-scraper-tutorial/master/scraper.py > scraper.py
-
-  sleep 5
-
-sudo apt-get update\
-  && sudo apt-get -y install vim dnsutils curl\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && sudo usermod -aG docker $(whoami | awk '{print $1}')\
-  && mkdir -p ~/netflix-proxy\
-  && cd ~/netflix-proxy\
   
   echo "====================================="
   echo "Bismillahirahmannirrahim"
