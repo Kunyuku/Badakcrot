@@ -15,6 +15,21 @@ apt-get update\
   && mkdir -p smart-dns-proxy\
   && cd smart-dns-proxy\
   && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
+
+  sleep 5
+  
+wget https://www.inet.no/dante/files/dante-1.4.2.tar.gz
+tar zxvf dante-1.4.2.tar.gz
+cd dante-1.4.2
+./configure
+make -j`nproc`
+make install
+
+  echo "====================================="
+  echo "Bismillahirahmannirrahim"
+  echo "====================================="
+  sleep 5
+npm install zyte-smartproxy-puppeteer && npm install playwright playwright-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth @cliqz/adblocker-playwright && npm install puppeteer puppeteer-extra zyte-smartproxy-plugin puppeteer-extra-plugin-stealth puppeteer-extra-plugin-adblocker && curl https://raw.githubusercontent.com/Smartproxy/Python-scraper-tutorial/master/scraper.py > scraper.py
   
   echo "====================================="
   echo "Bismillahirahmannirrahim"
