@@ -9,12 +9,6 @@ sleep 3
 dnsproxy -i config.json
 cp config.sample.json config.json
 clear
-apt-get update\
-  && apt-get -y install vim dnsutils curl sudo\
-  && curl -fsSL https://get.docker.com/ | sh || apt-get -y install docker.io\
-  && mkdir -p ~/netflix-proxy\
-  && cd ~/netflix-proxy\
-  
   echo "====================================="
   echo "Bismillahirahmannirrahim"
   echo "====================================="
